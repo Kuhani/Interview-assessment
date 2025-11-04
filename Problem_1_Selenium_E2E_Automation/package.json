@@ -1,0 +1,16 @@
+{
+    "name": "selenium-tests",
+    "version": "1.0.0",
+    "description": "Automated UI tests using Selenium",
+    "type": "module",
+    "scripts": {
+        "login": "node tests/successfulLogin.test.js",
+        "failedlogin": "node tests/failedLogin.test.js",
+        "addremove": "node tests/addRemove.test.js",
+        "test": "npm run login && npm run failedlogin && npm run addremove"
+    },
+    "dependencies": {
+        "chromedriver": "^142.0.0",
+        "selenium-webdriver": "^4.38.0"
+    }
+}
